@@ -3,9 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<title>NLA</title>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="jquery.textfill.min.js"></script>
+    <style>
+	      body {
+	        font-family: "Arial Black", Gadget, sans-serif;
+	        font-size: 25px;
+	  		text-shadow: -1px -1px 0px #aaa;
+	  		background-color: #2E2E2E;  
+	      }
+	      h1 {
+	      	border-top: none; 
+	      	border-style: solid; 
+	      	border-color: none;
+	      	text-align: center;
+	      }
+	      h2 {
+	      	text-align: center;
+	      }
+	      #middlename {
+	      	color: #585858;
+	      	text-shadow: 1px 1px 0px Black;
+	      }
+	      #personaltitle {
+	      	text-shadow: -1px -1px 0px #aaa;
+	      }
+	    </style>
+	    <script>
+	    	$(function() {
+	    		$('#special').textfill();
+	    	});
+	    </script>
 </head>
 <body>
-	<h1>Nicole Leigh Ansbacher</h1>
-	<h2>Theatrical Designer</h2>
+	<span>
+		<h1>Nicole <span id="middlename">Leigh</span> Ansbacher</h1>
+		<h2><span id="personaltitle">Theatrical Designer</span></h2>
+	</span>
 </body>
 </html>
